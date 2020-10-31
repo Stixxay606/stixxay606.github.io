@@ -1,6 +1,5 @@
 /* font import */
-/* @import url('https://fonts.googleapis.com/css2?family=Itim&family=Roboto&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&family=Permanent+Marker&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&family=Roboto&display=swap');
 
 /* base styles */
 * {
@@ -11,7 +10,6 @@
 
 :root {
   --primary-font: 'Roboto', sans-serif;
-  /* --secondary-font: 'Architects Daughter', cursive; */
   --secondary-font: 'Henny Penny', cursive;
   --background-color: #eac3b2;
   --font-color: #45bdbe;
