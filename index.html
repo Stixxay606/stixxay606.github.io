@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="js/script.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/2b0037c0f1.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="css/main.css" />
     <title>Document</title>
   </head>
@@ -15,13 +19,14 @@
         <div class="menu-btn__lines"></div>
       </div>
       <ul class="menu-items">
-        <li><a href="#" class="menu-item">Home</a></li>
-        <li><a href="#" class="menu-item">About</a></li>
-        <li><a href="#" class="menu-item">Services</a></li>
-        <li><a href="#" class="menu-item">Contact</a></li>
+        <li><a href="#home" class="menu-item">Home</a></li>
+        <li><a href="#music" class="menu-item">Music</a></li>
+        <li><a href="#tours" class="menu-item">Tour Dates</a></li>
+        <li><a href="#contact" class="menu-item">Contact</a></li>
+        <li><a href="#" class="menu-item">Merch</a></li>
       </ul>
     </header>
-    <main class="content">
+    <main class="content" id="home">
       <h1 class="title">Sage</h1>
 
       <!-- video -->
@@ -56,6 +61,117 @@
           </a>
         </div>
       </section>
+
+      <!-- web -->
+      <section class="web" id="music">
+        <div class="web__card spotify__div">
+          <div class="icon spotify__icon">
+            <i class="fab fa-spotify fa-4x"></i>
+          </div>
+          <a
+            target="_blank"
+            href="https://open.spotify.com/artist/3rmDtaAXU9YXEK1ChZyx98?si=IGBYqvTMQOaHrF7PuVsZbA"
+            class="card__link"
+          >
+            <h2 class="card__link__header">Spotify</h2>
+          </a>
+        </div>
+        <div class="web__card">
+          <div class="icon yt__icon">
+            <i class="fab fa-youtube fa-4x"></i>
+          </div>
+          <a
+            target="_blank"
+            href="https://www.youtube.com/channel/UCv6jLLlcBFM6_QRl-nqrpug"
+            class="card__link"
+          >
+            <h2 class="card__link__header">YouTube</h2>
+          </a>
+        </div>
+        <div class="web__card apple__div">
+          <div class="icon apple__icon">
+            <i class="fab fa-apple fa-4x icon"></i>
+          </div>
+          <a
+            target="_blank"
+            href="https://music.apple.com/us/artist/sage/1459124322"
+            class="card__link"
+          >
+            <h2 class="card__link__header">Music</h2>
+          </a>
+        </div>
+      </section>
+
+      <section class="social_media_cta">
+        <p class="social_media_cta__text">
+          <a href="https://www.instagram.com/sagetheband/"
+            >Band news & updates</a
+          >
+        </p>
+      </section>
+
+      <!-- tours -->
+      <section class="tours" id="tours">
+        <div class="tour__icon__container">
+          <p class="tour__info">Upcoming Dates</p>
+          <!-- fist icon for bands in town here -->
+        </div>
+
+        <div class="tour__card">
+          <p class="tour__date">Tue, MAY 18, 2021</p>
+          <p class="tour__venue">Stereo Plaza</p>
+          <p class="tour__location">Kyiv, Ukraine</p>
+          <a href="#" class="tour__notify">NOTIFY ME</a>
+          <a href="#" class="tour__rsvp">RSVP</a>
+        </div>
+        <div class="tour__card">
+          <p class="tour__date">Fri, MAY 21, 2021</p>
+          <p class="tour__venue">Stadium</p>
+          <p class="tour__location">Moscow, Russia</p>
+          <a href="#" class="tour__notify">NOTIFY ME</a>
+          <a href="#" class="tour__rsvp">RSVP</a>
+        </div>
+        <div class="tour__card">
+          <p class="tour__date">Sun, MAY 23, 2021</p>
+          <p class="tour__venue">A2 Green Concert</p>
+          <p class="tour__location">Sankt-peterburg, Russia</p>
+          <a href="#" class="tour__notify">NOTIFY ME</a>
+          <a href="#" class="tour__rsvp">RSVP</a>
+        </div>
+
+        <a href="mailto:Sageband.info@gmail.com" class="email__btn"
+          >ASK TO PLAY IN YOUR CITY</a
+        >
+      </section>
     </main>
+
+    <!-- footer -->
+    <footer class="footer" id="contact">
+      <ul class="social_media">
+        <li class="media__link">
+          <a href="https://www.facebook.com/sagetheband/" class="facebook">
+            <i class="fab fa-facebook-square fa-2x"></i
+          ></a>
+        </li>
+        <li class="media__link">
+          <a href="#" class="twitter">
+            <i class="fab fa-twitter-square fa-2x"></i>
+          </a>
+        </li>
+        <li class="media__link">
+          <a href="https://www.instagram.com/sagetheband/" class="instagram">
+            <i class="fab fa-instagram-square fa-2x"></i
+          ></a>
+        </li>
+        <li class="media__link">
+          <a
+            href="https://www.youtube.com/channel/UCv6jLLlcBFM6_QRl-nqrpug"
+            class="youtube"
+          >
+            <i class="fab fa-youtube-square fa-2x"></i
+          ></a>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>

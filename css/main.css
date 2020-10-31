@@ -1,5 +1,6 @@
 /* font import */
-@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Itim&family=Roboto&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&family=Permanent+Marker&family=Roboto&display=swap');
 
 /* base styles */
 * {
@@ -9,14 +10,18 @@
 }
 
 :root {
-  --primary-color: black;
-  --secondary-font: 'Architects Daughter', cursive;
+  --primary-font: 'Roboto', sans-serif;
+  /* --secondary-font: 'Architects Daughter', cursive; */
+  --secondary-font: 'Henny Penny', cursive;
+  --background-color: #eac3b2;
+  --font-color: #45bdbe;
+  --font-color-dark: #133c68;
 }
 
 body {
   padding-top: 50px;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #8ca875;
+  font-family: var(--primary-font);
+  background-color: var(--background-color);
 }
 
 /* header */
@@ -31,7 +36,7 @@ body {
   padding: 1rem 2rem;
   z-index: 1;
   height: 50px;
-  background-color: var(--primary-color);
+  background-color: var(--font-color);
 }
 
 .header a {
@@ -52,7 +57,7 @@ body {
   right: 0;
   left: 0;
   height: 100vh;
-  background-color: var(--primary-color);
+  background-color: var(--font-color);
   transform: translateX(100vw);
   transition: transform 0.4s ease-in-out;
 }
@@ -136,16 +141,17 @@ body {
 
 /* content wrapper */
 .content {
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
 }
 
 /* title */
 .title {
+  color: var(--font-color-dark);
   text-align: center;
-  font-size: 5rem;
+  font-size: 6rem;
   margin-top: 4rem;
-  font-family: 'Architects Daughter', cursive;
+  font-family: var(--secondary-font);
   letter-spacing: 0.3rem;
 }
 
@@ -158,7 +164,7 @@ body {
 
 /* cta */
 .cta {
-  margin-top: 3rem;
+  margin-top: 2.5rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -168,6 +174,148 @@ body {
   width: 90%;
   display: block;
   margin: 0 auto;
+}
+
+/* web */
+.web {
+  margin-top: 5rem;
+  flex-direction: column;
+}
+
+.icon {
+  width: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  right: 10px;
+}
+
+.yt__icon {
+  position: relative;
+  right: 12px;
+}
+
+.apple__icon {
+  position: relative;
+  left: 10px;
+}
+
+.web__card {
+  margin-top: 4rem;
+  display: flex;
+  text-align: center;
+  justify-content: flex-start;
+}
+
+.spotify__div {
+  position: relative;
+  right: 14px;
+}
+
+.apple__div {
+  position: relative;
+  right: 20px;
+}
+
+.card__link {
+  color: var(--font-color);
+  text-decoration: none;
+}
+
+.card__link__header {
+  font-size: 4rem;
+}
+
+/* social media cta */
+.social_media_cta {
+  margin-top: 6rem;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.social_media_cta a {
+  text-decoration: none;
+  color: var(--font-color-dark);
+  text-decoration: underline;
+}
+
+/* tour section */
+.tours {
+  margin-top: 6rem;
+  font-size: 1.2rem;
+}
+
+.tour__info {
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.tour__card {
+  border-top: 2px solid var(--font-color);
+  padding-top: 0.4rem;
+}
+
+.tour__card a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  margin-top: 0.4rem;
+  text-decoration: none;
+}
+
+.tour__date,
+.tour__venu,
+.tour__location {
+  font-weight: 800;
+}
+
+.tour__venue {
+  color: var(--font-color);
+}
+
+.tour__location {
+  margin-bottom: 1.5rem;
+}
+
+.tour__notify {
+  background-color: var(--font-color);
+  color: var(--background-color);
+}
+
+.tour__rsvp {
+  border: 2px solid var(--font-color);
+  color: var(--font-color);
+  margin-bottom: 3rem;
+}
+
+.email__btn {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: var(--background-color);
+  background-color: var(--font-color);
+  padding: 1rem 1.5rem;
+  margin-top: -1.5rem;
+}
+
+/* footer */
+.social_media {
+  display: flex;
+  text-decoration: none;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.media__link a {
+  color: var(--font-color-dark);
 }
 
 /* media queries */
